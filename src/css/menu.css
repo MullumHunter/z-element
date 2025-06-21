@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  gap: 77px;
+  padding-left: 100px;
+}
+.menu__box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.menu__title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+}
+.menu__link {
+  color: #FFFFFF;
+  font-family: "Gilroy-Regular", serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=menu.css.map */

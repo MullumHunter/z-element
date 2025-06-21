@@ -1,0 +1,143 @@
+doctype html
+
+mixin cross_svg
+    svg(xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none")
+        path(d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" fill="#0F0F0F")
+
+mixin card(imgSrc, title, subtitle, btnTitle, className='card__img')
+    .card
+        img(class=className src=imgSrc alt='icon card')
+        .card__content
+            h2.card__title=title
+            p.card__subtitle=subtitle
+            buttun.card__btn.btn=btnTitle
+                img.btn__img(src='./src/asset/toRight.svg')
+
+mixin exempleItem(href, name)
+    td(class!=attributes.class)
+        a.examples__link(href=href)= name
+
+html
+    head
+        link(rel='stylesheet' href='./src/css/index.css')
+        meta(charset='UTF-8')
+        title Page
+        script(src='/src/js/modals.js' type="module" defer)
+        script(src='/src/js/form.js' type="module" defer)
+    body.body
+        .modals-view
+            .modal.modal--form
+                .modal__blackbox
+                .modal__container
+                    .modal__success
+                        h1.modal__message Your Message Successfully Sent
+                    .modal__form
+                        h1.modal__title SEND US MESSAGE
+                        .modal__blok
+                            label.modal__label(for='name') Full Name
+                            input.modal__input(type='text' name='name' id="name" placeholder="Your Name")
+                        .modal__blok
+                            label.modal__label(for='email') Email
+                            input.modal__input(type='email' name='email' id='email' placeholder="Your Email")
+                        .modal__blok
+                            label.modal__label(for='message') Message
+                            textarea.modal__input.modal__area(name='message' id='message' placeholder="Your Message")
+                        button.modal__submit SUBMIT
+                    button.modal__close
+                        +cross_svg
+        header.header
+            nav.navigation
+                a(href='/').navigation__logo
+                    img(src='./src/asset/logo.svg' alt='website logo')
+                button.navigation__menu
+                    img(src='./src/asset/menu.svg' alt='website menu')
+        main.pages
+            section.pages__welcome.welcome.pages__section
+                .welcome__container
+                    .welcome__box
+                        h1.welcome__title New Automation Tool for Your Home
+                        p.welcome__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.
+                        button.welcome__button See Our Project
+                    img.welcome__baner(src='./src/asset/banner.svg' alt='website banner')
+                .welcome__bg
+
+            section.service.pages__section
+                p.service__title What we do to help our client grow in digital era,
+                .service__cards
+                    .service__boxLeft
+                        +card(
+                            './src/asset/icons/shirtBlue.svg',
+                            'Make Your business To Be Better Famous In Internet',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                            'Learn more'
+                        )
+                    .service__boxRight
+                        +card(
+                            './src/asset/icons/shirtRed.svg',
+                            'Bring Technology To Your Comfrotable Home',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                            'Learn more',
+                            'card__img card__img--absolut'
+                        )
+                        +card(
+                            './src/asset/icons/shirtPurple.svg',
+                            'Build Your Digital Product That Suitable For Your Need',
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                            'Learn more'
+                        )
+
+            section.examples.pages__section
+                .examples__bg
+                .examples__container
+                    .examples__top
+                        h2.examples__title Our Beloved Client
+                        p.examples__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam.
+                    table.examples__table
+                        tr.examples__line
+                            +exempleItem("#", 'LOGO CLIENT 1')(class="examples__item")
+                            +exempleItem("#", 'LOGO CLIENT 2')(class="examples__item")
+                            +exempleItem("#", 'LOGO CLIENT 3')(class="examples__item")
+                            +exempleItem("#", 'LOGO CLIENT 4')(class="examples__item")
+                        tr.examples__line
+                            +exempleItem("#", 'LOGO CLIENT 5')(class="examples__item")
+                            +exempleItem("#", 'LOGO CLIENT 6')(class="examples__item")
+                            +exempleItem("#", 'LOGO CLIENT 7')(class="examples__item")
+                            +exempleItem("#", 'More')(class="examples__item examples__item--more")
+
+            section.cooperation
+                .cooperation__bg
+                .cooperation__box
+                    .cooperation__text
+                        h2.cooperation__title Intersted to woek with our team?
+                        p.cooperation__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    button.cooperation__btn Let’s Talk
+
+        footer.footer
+            .footer__info
+                .footer__logo
+                    img(src='./src/asset/logoLight.svg' alt='footer logo site')
+                    h3.footer__title Afrianska
+                ul.footer__array
+                    li.footer__item
+                        p.footer__text.footer__text--abb A.
+                        p.footer__text Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    li.footer__item
+                        p.footer__text.footer__text--abb T.
+                        a(href="tel:+62-812-7313-4321").footer__text +62-812-7313-4321
+                    li.footer__item
+                        p.footer__text.footer__text--abb E
+                        a(href="mailto:hello.afrian@gmail.com").footer__text hello.afrian@gmail.com
+                p.footer__copyright 2019 © Afrianska. All rights reserved.
+            .footer__menu.menu
+                .menu__box
+                    h4.menu__title About US
+                    a.menu__link(href='#') About
+                    a.menu__link(href='#') What We Do
+                    a.menu__link(href='#') Project
+                    a.menu__link(href='#') It Work With Us
+                .menu__box
+                    h4.menu__title Follow US
+                    a.menu__link(href='#') Instagram
+                    a.menu__link(href='#') Facebook
+                    a.menu__link(href='#') LinkedIn
+                    a.menu__link(href='#') Youtube

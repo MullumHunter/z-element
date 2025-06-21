@@ -1,0 +1,7 @@
+.body {
+    width: 100vw;
+
+    &__modal-opened {
+        overflow: hidden;
+    }
+}

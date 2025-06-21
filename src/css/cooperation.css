@@ -1,0 +1,67 @@
+.cooperation {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 100vw;
+  z-index: 2;
+}
+.cooperation__bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 90vw;
+  height: 865px;
+  background: #316099;
+  border-radius: 0 200px 0 0;
+}
+.cooperation__box {
+  width: 100vw;
+  max-width: 940px;
+  margin: 0 auto;
+  padding-top: 91px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 96px;
+}
+.cooperation__text {
+  height: 204px;
+  width: 465px;
+}
+.cooperation__title {
+  font-size: 36px;
+  line-height: 46px;
+  width: 360px;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+.cooperation__subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: #adbfd6;
+  letter-spacing: 1px;
+  font-family: "Gilroy-Regular", serif;
+}
+.cooperation__btn {
+  font-size: 16px;
+  line-height: 26px;
+  width: 220px;
+  height: 56px;
+  color: #FFFFFF;
+  background: #5A98D0;
+  letter-spacing: 1px;
+  margin-right: 80px;
+  font-family: "Gilroy-Regular", serif;
+  border-radius: 10px;
+}
+.cooperation:after {
+  content: "";
+  width: 78.55%;
+  height: 1px;
+  background: #83a0c2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=cooperation.css.map */

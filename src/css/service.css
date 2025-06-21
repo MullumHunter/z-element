@@ -1,0 +1,31 @@
+.service {
+  height: 1162px;
+  margin-bottom: 212px;
+  margin-top: 180px;
+  position: relative;
+}
+.service__title {
+  width: 365px;
+  color: #316099;
+  font-size: 36px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 5px;
+}
+.service__cards {
+  display: flex;
+  gap: 100px;
+  height: 100%;
+  justify-content: flex-end;
+}
+.service__boxLeft {
+  display: flex;
+  align-items: center;
+}
+.service__boxRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=service.css.map */

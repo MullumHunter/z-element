@@ -13,8 +13,6 @@ async function sendFormData(obj) {
             method: 'POST',
             body: JSON.stringify(obj)
         });
-        const a = 1;
-        const b = 33123;
 
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);

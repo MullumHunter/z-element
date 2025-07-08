@@ -13,6 +13,11 @@ export default class SendForm {
 
         return JSON.stringify(formData, null, 2);
     }
+    clearForm() {
+        this.inputs.forEach((input, inputIndex) => {
+            input.value = '';
+        });
+    }
     async send() {
         const url = 'https://jsonplaceholder.typicode.com/posts';
         const json = this.getFormData();
@@ -32,6 +37,7 @@ export default class SendForm {
             }
 
             this.submit.disabled = false;
+            this.clearForm();
 
             return true;
         } catch (error) {

@@ -11,7 +11,7 @@
         z-index: -1;
         width: 90vw;
         height: 865px;
-        background: #316099;
+        background: var(--deep-blue);
         border-radius: 0 200px 0 0;
 
         @media (width <= 1068px) {
@@ -70,7 +70,7 @@
         font-size: 36px;
         line-height: 46px;
         width: 360px;
-        color: #FFF;
+        color: var(--white);
         padding-bottom: 32px;
 
         @media (width <= 1068px) {
@@ -86,7 +86,7 @@
     &__subtitle {
         font-size: 16px;
         line-height: 26px;
-        color: #adbfd6;
+        color: var(--light-blue);
         letter-spacing: 1px;
         font-family: Gilroy-Regular, serif;
 
@@ -102,8 +102,8 @@
         line-height: 26px;
         width: 220px;
         height: 56px;
-        color: #FFF;
-        background: #5A98D0;
+        color: var(--white);
+        background: var(--blue);
         letter-spacing: 1px;
         margin-right: 80px;
         font-family: Gilroy-Regular, serif;
@@ -124,7 +124,7 @@
         content: '';
         width: 78.55%;
         height: 1px;
-        background: #83a0c2;
+        background: var(--white-blue);
         position: absolute;
         bottom: 0;
         left: 0;

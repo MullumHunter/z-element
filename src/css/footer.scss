@@ -1,7 +1,7 @@
 .footer {
     width: 950px;
     margin: 0 auto;
-    color: #FFF;
+    color:var(--white);
     display: flex;
     position: relative;
     z-index: 2;
@@ -22,7 +22,7 @@
 
     @media (width <= 450px) {
         width: 100%;
-        background: #316099;
+        background: var(--deep-blue);
         padding: 45px 0;
     }
 
@@ -54,7 +54,7 @@
     &__copyright {
         font-family: Gilroy-Regular, serif;
         padding-top: 64px;
-        color: #83a0c2;
+        color: var(--white-blue);
         letter-spacing: 1px;
     }
 
@@ -65,7 +65,7 @@
     }
 
     &__text {
-        color: white;
+        color: var(--white);
 
         &--abb {
             font-family: Gilroy-SemiBold, serif;

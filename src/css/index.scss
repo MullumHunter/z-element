@@ -1,3 +1,25 @@
+:root {
+	--white: #FFF;
+	--white-grey: #e3eef6;
+	--white-blue: #83a0c2;
+	--light-grey: #95a5b5;
+	--light-blue: #adbfd6;
+	--blue: #5A98D0;
+	--blue-grey: #5A98D0;
+	--blue-bright: #9cc1e3;
+	--grey-blue: #4c6586;
+	--grey-60: #FFFFFF99;
+	--dark-blue: #1F3F68;
+	--dark-blue-20: #1070B133;
+	--dark-blue-60: #1F3F6899;
+	--deep-blue: #316099;
+	--black-60: #00000099;
+
+	--gr-gray: #98C3E833;
+	--gr-gray-dark: #98C3E800;
+
+}
+
 @import "normalize.css";
 @import "font";
 @import "body";

@@ -19,15 +19,8 @@
         }
     }
 
-    &__bg {
-        position: absolute;
-        height: 100%;
-        width: 100vw;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        background: linear-gradient(to top, rgb(152 195 232 / 20%), rgb(152 195 232 / 0%));
-    }
+    //&__bg {
+    //    }
 
     &__box {
         width: 520px;
@@ -47,13 +40,23 @@
             padding: 20px 20px 40px;
         }
     }
+    &__box::after{
+        position: absolute;
+        height: 100%;
+        width: 100vw;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background: linear-gradient(to top, var(--gr-gray), var(--gr-gray-dark));
+
+    }
 
     &__title {
         font-size: 64px;
         font-weight: 700;
         letter-spacing: 3px;
         font-family: Galien, sans-serif;
-        color: #1F3F68;
+        color: var(--dark-blue);
 
         @media (width <= 940px) {
             text-align: center;
@@ -74,7 +77,7 @@
         font-weight: 400;
         line-height: 26px;
         letter-spacing: 0.5px;
-        color: rgb(31 63 104 / 60%);
+        color: var(--dark-blue-60);
         font-family: Gilroy-Regular, sans-serif;
 
         @media (width <= 940px) {
@@ -90,13 +93,11 @@
     }
 
     &__button {
-        width: 220px;
-        height: 56px;
-        border: none;
+        padding: 15px 48px;
         border-radius: 10px;
         letter-spacing: 1px;
-        color: #FFF;
-        background: #5A98D0;
+        color: var(--white);
+        background: var(--blue);
         font-family: Gilroy-Regular, sans-serif;
 
         @media (max-width: 360px) {
@@ -104,7 +105,7 @@
         }
     }
 
-    &__baner {
+    &__billboard {
         position: absolute;
         top: 11px;
         right: -190px;

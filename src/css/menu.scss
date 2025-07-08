@@ -29,6 +29,11 @@
             }
         }
     }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 
     &__title {
         font-size: 20px;
@@ -37,7 +42,7 @@
     }
 
     &__link{
-        color: #FFF;
+        color: var(--white);
         font-family: Gilroy-Regular, serif;
         font-size: 16px;
         letter-spacing: 2px;

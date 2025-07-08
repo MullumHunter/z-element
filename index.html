@@ -1,57 +1,18 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script type="module" crossorigin src="./z-element/main-DF-Adr_U.js"></script>
-  <link rel="stylesheet" crossorigin href="./z-element/main-WgiYIe_E.css">
-</head>
-<body>
-
-</body>
-</html>
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Page</title>
-
-
+    <script type="module" crossorigin src="./z-element/main-B03Ep0D5.js"></script>
+    <link rel="stylesheet" crossorigin href="./z-element/main-B4Fj8B_d.css">
   </head>
-  <body class="body">
+  <body>
     <div class="modals-view">
-      <div class="modal modal--form">
-        <div class="modal__blackbox"></div>
-        <div class="modal__container">
-          <div class="modal__success">
-            <h1 class="modal__message">Your Message Successfully Sent</h1>
-          </div>
-          <div class="modal__form">
-            <h1 class="modal__title">SEND US MESSAGE</h1>
-            <div class="modal__blok">
-              <label class="modal__label" for="name">Full Name</label>
-              <input class="modal__input" type="text" name="name" id="name" placeholder="Your Name">
-            </div>
-            <div class="modal__blok">
-              <label class="modal__label" for="email">Email</label>
-              <input class="modal__input" type="email" name="email" id="email" placeholder="Your Email">
-            </div>
-            <div class="modal__blok">
-              <label class="modal__label" for="message">Message</label>
-              <textarea class="modal__input modal__area" name="message" id="message" placeholder="Your Message"></textarea>
-            </div>
-            <button class="modal__submit">SUBMIT</button>
-          </div>
-          <button class="modal__close">
-            <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-              <path d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z" fill="#0F0F0F"></path>
-            </svg>
-          </button>
-        </div>
+      <div class="modal" id="modal">
+        <div class="modal__blackbox" id="modal-blackbox"></div>
+        <div class="modal__container" id="modal-container"></div>
       </div>
     </div>
     <header class="header">
@@ -64,38 +25,32 @@
         <div class="welcome__container">
           <div class="welcome__box">
             <h1 class="welcome__title">New Automation Tool for Your Home</h1>
-            <p class="welcome__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p>
-            <button class="welcome__button">See Our Project</button>
-          </div><img class="welcome__baner" src="./z-element/banner-BWwZAWQj.svg" alt="website banner">
+            <p class="welcome__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus tristique vulputate ultrices ut mauris tellus at. Posuere sollicitudin odio tellus elit.</p><a class="welcome__button" href="#">See Our Project</a>
+          </div><img class="welcome__billboard" src="./z-element/billboard-n2Cy0BL3.svg" alt="website billboard">
         </div>
-        <div class="welcome__bg"></div>
       </section>
       <section class="service pages__section">
         <p class="service__title">What we do to help our client grow in digital era,</p>
-        <div class="service__cards">
-          <div class="service__boxLeft">
-            <div class="card"><img class="card__img" src="./z-element/shirtBlue-BrxYBz61.svg" alt="icon card">
-              <div class="card__content">
-                <h2 class="card__title">Make Your business To Be Better Famous In Internet</h2>
-                <p class="card__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <buttun class="card__btn btn">Learn more<img class="btn__img" src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%200L6.59%201.41L12.17%207H0V9H12.17L6.59%2014.59L8%2016L16%208L8%200Z'%20fill='%235A98D0'/%3e%3c/svg%3e"></buttun>
-              </div>
+        <div class="service__box">
+          <div class="card"><img class="card__img card__img--absolut" src="./z-element/shirtRed-Bc7GiCCf.svg" alt="icon card">
+            <div class="card__content">
+              <h2 class="card__title">Bring Technology To Your Comfrotable Home</h2>
+              <p class="card__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="card__btn btn">Learn more<img class="btn__img" src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%200L6.59%201.41L12.17%207H0V9H12.17L6.59%2014.59L8%2016L16%208L8%200Z'%20fill='%235A98D0'/%3e%3c/svg%3e" alt="arrow image"></button>
             </div>
           </div>
-          <div class="service__boxRight">
-            <div class="card"><img class="card__img card__img--absolut" src="./z-element/shirtRed-6aBFz_7-.svg" alt="icon card">
-              <div class="card__content">
-                <h2 class="card__title">Bring Technology To Your Comfrotable Home</h2>
-                <p class="card__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <buttun class="card__btn btn">Learn more<img class="btn__img" src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%200L6.59%201.41L12.17%207H0V9H12.17L6.59%2014.59L8%2016L16%208L8%200Z'%20fill='%235A98D0'/%3e%3c/svg%3e"></buttun>
-              </div>
+          <div class="card"><img class="card__img" src="./z-element/shirtPurple-DIY4VKD8.svg" alt="icon card">
+            <div class="card__content">
+              <h2 class="card__title">Build Your Digital Product That Suitable For Your Need</h2>
+              <p class="card__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="card__btn btn">Learn more<img class="btn__img" src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%200L6.59%201.41L12.17%207H0V9H12.17L6.59%2014.59L8%2016L16%208L8%200Z'%20fill='%235A98D0'/%3e%3c/svg%3e" alt="arrow image"></button>
             </div>
-            <div class="card"><img class="card__img" src="./z-element/shirtPurple-CMuzgOeW.svg" alt="icon card">
-              <div class="card__content">
-                <h2 class="card__title">Build Your Digital Product That Suitable For Your Need</h2>
-                <p class="card__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <buttun class="card__btn btn">Learn more<img class="btn__img" src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%200L6.59%201.41L12.17%207H0V9H12.17L6.59%2014.59L8%2016L16%208L8%200Z'%20fill='%235A98D0'/%3e%3c/svg%3e"></buttun>
-              </div>
+          </div>
+          <div class="card"><img class="card__img" src="./z-element/shirtBlue-Dv3TdgRD.svg" alt="icon card">
+            <div class="card__content">
+              <h2 class="card__title">Make Your business To Be Better Famous In Internet</h2>
+              <p class="card__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <button class="card__btn btn">Learn more<img class="btn__img" src="data:image/svg+xml,%3csvg%20width='16'%20height='16'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8%200L6.59%201.41L12.17%207H0V9H12.17L6.59%2014.59L8%2016L16%208L8%200Z'%20fill='%235A98D0'/%3e%3c/svg%3e" alt="arrow image"></button>
             </div>
           </div>
         </div>
@@ -123,14 +78,14 @@
           </table>
         </div>
       </section>
-      <section class="cooperation">
+      <section class="cooperation pages__section">
         <div class="cooperation__bg"></div>
         <div class="cooperation__box">
           <div class="cooperation__text">
             <h2 class="cooperation__title">Intersted to woek with our team?</h2>
             <p class="cooperation__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
-          <button class="cooperation__btn">Let’s Talk</button>
+          <button class="cooperation__btn" id="lets-talk-btn">Let’s Talk</button>
         </div>
       </section>
     </main>
@@ -155,10 +110,22 @@
       </div>
       <div class="footer__menu menu">
         <div class="menu__box">
-          <h4 class="menu__title">About US</h4><a class="menu__link" href="#">About</a><a class="menu__link" href="#">What We Do</a><a class="menu__link" href="#">Project</a><a class="menu__link" href="#">It Work With Us</a>
+          <h4 class="menu__title">About US</h4>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">About</a></li>
+            <li><a class="menu__link" href="#">What We Do</a></li>
+            <li><a class="menu__link" href="#">Project</a></li>
+            <li><a class="menu__link" href="#">It Work With Us</a></li>
+          </ul>
         </div>
         <div class="menu__box">
-          <h4 class="menu__title">Follow US</h4><a class="menu__link" href="#">Instagram</a><a class="menu__link" href="#">Facebook</a><a class="menu__link" href="#">LinkedIn</a><a class="menu__link" href="#">Youtube</a>
+          <h4 class="menu__title">Follow US</h4>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">Instagram</a></li>
+            <li><a class="menu__link" href="#">Facebook</a></li>
+            <li><a class="menu__link" href="#">LinkedIn</a></li>
+            <li><a class="menu__link" href="#">Youtube</a></li>
+          </ul>
         </div>
       </div>
     </footer>
